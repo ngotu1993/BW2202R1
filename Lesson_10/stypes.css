@@ -1,0 +1,43 @@
+:root {
+    --header-height: 70px;
+    --primary-background: #f0ecec;
+}
+
+header {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-around;
+}
+
+nav {
+
+}
+
+.logo_header {
+    height: 100%;
+}
+
+nav.logo_header {
+    float: left;
+}
+
+aside {
+    width: 30%;
+    height: 700px;
+    background-color: var(--primary-background);
+
+}
+
+article {
+    width: 69%;
+    height: 700px;
+    background-color: rgb(160, 72, 72);
+}
+
+aside,article {
+    float: left;
+}
+
+footer {
+
+}

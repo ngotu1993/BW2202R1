@@ -1,0 +1,17 @@
+
+* {
+   box-sizing: border-box;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+.paragraph {
+    width: 300px;
+    height: auto;
+    margin: auto;
+    background: url(./img/hoahong.jpeg) no-repeat center center fixed;
+    color: wheat;
+}
+
+.paragraph_one {
+    background-color: rgb(91, 170, 108);
+}

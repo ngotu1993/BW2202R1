@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    header {
+        background-color: violet;
+        height: 100px;
+    }
+
+    aside {
+        background-color: red;
+        height: 500px;
+        width: 30%;
+    }
+
+    article {
+        background-color: blue;
+        height: 500px;
+        width: 70%;
+    }
+
+    aside , article {
+        float: left;
+    }
+
+    footer {
+        background-color: green;
+        height: 100px;
+        clear: both;
+    }
+
+    @media screen and (max-width: 768px) {
+        aside, article {
+            height: 300px;
+            width: 100%;
+        }
+    }
+
+</style>
+
+<body>
+    <header>
+
+    </header>
+    
+    <aside>
+
+    </aside>
+    
+    <article>
+
+    </article>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

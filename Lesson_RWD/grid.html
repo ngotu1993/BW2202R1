@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    
+    @media screen and (max-width: 576px) {
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+    }
+    
+    @media screen and (min-width: 577px){
+        .col-sm-1 {width: 8.33%;}
+        .col-sm-2 {width: 16.66%;}
+        .col-sm-3 {width: 25%;}
+        .col-sm-4 {width: 33.33%;}
+        .col-sm-5 {width: 41.66%;}
+        .col-sm-6 {width: 50%;}
+        .col-sm-7 {width: 58.33%;}
+        .col-sm-8 {width: 66.66%;}
+        .col-sm-9 {width: 75%;}
+        .col-sm-10 {width: 83.33%;}
+        .col-sm-11 {width: 91.66%;}
+        .col-sm-12 {width: 100%;}
+    }
+
+
+    header {
+        background-color: #ccc;
+        height: 100px;
+    }
+
+    aside.left, article, aside.right {
+        float: left;
+        height: 500px;
+    }
+
+    aside.left {
+        background-color: red;
+    }
+
+    article {
+        background-color: green;
+    }
+
+    aside.right {
+        background-color: yellow;
+    }
+
+    footer {
+        clear: both;
+        height: 100px;
+        background-color: blue;
+    }
+
+</style>
+
+<body>
+    <header class="col-12">
+
+    </header>
+
+    <aside class=" left col-2 col-sm-12">
+
+    </aside>
+
+    <article class="col-8 col-sm-12">
+
+    </article>
+
+    <aside class="right col-2 col-sm-12">
+
+    </aside>
+
+    <footer class="col-12"></footer>
+</body>
+</html>
