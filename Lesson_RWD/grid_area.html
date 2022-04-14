@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .item1 {
+        grid-area: item1;
+    }
+    .item2 {
+        grid-area: item2;
+    }
+    .item3 {
+        grid-area: item3;
+    }
+    .item4 {
+        grid-area: item4;
+    }
+    .item5 {
+        grid-area: item5;
+    }
+    .item6 {
+        grid-area: item6;
+    }
+    .item7 {
+        grid-area: item7;
+    }
+    .item8 {
+        grid-area: item8;
+    }
+    .item9 {
+        grid-area: item9;
+    }
+
+    .container {
+        display: grid;
+        grid-template-areas: 
+        'item1 item1 item1 item1'
+        'item1 item2 item2 item3'
+        
+        ;
+        gap: 10px;
+
+    }
+
+    .container > div {
+        border: 1px solid #ccc;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">1</div>
+        <div class="item3">1</div>
+        <div class="item4">1</div>
+        <div class="item5">1</div>
+        <div class="item6">1</div>
+        <div class="item7">1</div>
+        <div class="item8">1</div>
+        <div class="item9">1</div>
+        <div class="item10">1</div>
+    </div>
+</body>
+</html>
