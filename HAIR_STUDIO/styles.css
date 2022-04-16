@@ -2,11 +2,330 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'poppins', sans-serif;
 }
 
-html {
-    font-family: Arial, Helvetica, sans-serif;
+:root {
+    --text-color: #009688;
 }
+
+.title_text {
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.title_text h1 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.title_text p {
+    font-size: 30px;
+    font-weight: 300;
+    margin: auto;
+    text-transform: uppercase;
+    color: #46a56e;
+    position: relative;
+    z-index: 1;
+}
+
+.title_text p::after {
+    content: " ";
+    display: block;
+    width: 70px;
+    height: 35px;
+    background: linear-gradient(#019578, #fff);
+    position: absolute;
+    top: -13px;
+    left: 46%;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    z-index: -1;
+}
+
+/* Banner CSS */
+
+#banner {
+    background: linear-gradient(rgba(0,0,0,0.5),#009688), url(./images/banner.jpg) no-repeat center / cover  ;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.banner_logo {
+    width: 140px;
+    position: absolute;
+    top: 28px;
+    left: 140px;
+}
+
+.banner_text {
+    padding-top: 180px;
+    text-align: center;
+    color: #fff;
+
+}
+.banner_text h1 {
+    font-size: 130px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.banner_text p {
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.banner_btn {
+    padding: 70px 0;
+}
+
+.banner_btn a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    width: 152px;
+    padding: 12px 0;
+    margin: 0 12px;
+    position: relative;
+    z-index: 1;
+}
+
+.banner_btn a span {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.banner_btn a:hover {
+    color: #000;
+}
+
+
+.banner_btn a:hover span {
+    width: 100%;
+}
+
+/* Side NavBar */
+
+#sideNav {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    background: var(--text-color);
+    z-index: 2;
+    transition: right 0.s;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 50px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#menuBtn {
+    width: 50px;
+    height: 50px;
+    background: var(--text-color);
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#menuBtn img {
+    width: 20px;
+    margin-top: 15px;
+}
+
+/* Feature CSS */
+
+#feature {
+    width: 100%;
+    padding: 70px 0;
+}
+
+.feature_box {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.feature_info {
+    margin: auto;
+    flex: 1;
+}
+
+.feature_section h3{
+    font-size: 24px;
+    font-weight: 100;
+    color: var(--text-color);
+}
+
+.feature_desc {
+    display: flex;
+    align-items: center;
+    padding: 8px 0 32px;
+}
+
+.feature_icon {
+    flex-basis: 8%;
+}
+
+.feature_icon i {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    color: var(--text-color);
+    margin-right: 16px;
+}
+
+.feature_img {
+    flex: 1;
+}
+
+.feature_img img{
+    width: 70%;
+    margin-left: auto; 
+    margin-right: auto;   
+    border-radius: 10px;
+    display: block;
+}
+
+/* Services CSS */
+
+#service {
+    width: 100%;
+    background-color: #efefef;
+    padding: 70px 0;
+}
+
+.service_box {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.service_item {
+    flex-basis: 48%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.service_item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.service_desc {
+    width: 80%;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 1s;
+    opacity: 0;
+}
+
+hr {
+    width: 60%;
+    margin: 24px auto;
+    height: 2px;
+    color: #fff;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), var(--text-color));
+    position: absolute;
+    bottom: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    opacity: 0;
+    transition: 1s;
+}
+
+.service_item:hover .overlay {
+    opacity: 1;
+}
+
+.service_item:hover .service_desc {
+    opacity: 1;
+    bottom: 40%
+}
+
+/* Testimonial CSS */
+
+#testimonial {
+    width: 100%;
+    padding: 70px 0;
+}
+
+.testimonial_box {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.testimonial_item {
+    flex-basis: 30%;
+    box-shadow: 0 10px 20px 3px #00968814;
+    padding: 8px;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.testimonial_item:hover {
+    transform: translateY(7%);
+}
+
+.testimonial_item i {
+    width: 20px;
+    height: 20px;
+    color: var(--text-color);
+    margin-left: 8px;
+}
+
+.testimonial_user {
+    margin: 20px 0;
+}
+
+.testimonial_user img {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+
+.testimonial_user {
+    display: flex;
+    text-align: center;
+}
+
+/* Footer CSS */
 
 footer {
     background-color: #efefef;
@@ -21,17 +340,6 @@ footer {
     left: 50%;
     transform: translateX(-50%);
     opacity: 0.1;
-}
-
-.footer_text {
-    text-align: center;
-    padding: 90px;
-}
-
-.footer_text p {
-    margin: 12px 0;
-    text-transform: uppercase;
-    color: #46a56e;
 }
 
 .footer_info {
@@ -52,8 +360,8 @@ footer {
 
 .footer_times h4,
 .footer_contacts h4 {
-    font-size: 50px;
-    font-weight: 300px;
+    font-size: 28px;
+    font-weight: 300;
     margin: 12px 0;
 }
 
@@ -64,7 +372,7 @@ footer {
 
 .footer_times i, .footer_contacts i {
     font-size: 20px;
-    color: #009688;
+    color: var(--text-color);
     margin: 10px;
 
 }
@@ -79,7 +387,7 @@ footer {
     font-size: 20px;
     line-height: 40px;
     margin: 40px 5px 0;
-    color: #009688;
+    color: var(--text-color);
     cursor: pointer;
     transform: 0.5s;
 }

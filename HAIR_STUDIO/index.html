@@ -7,14 +7,202 @@
     <title>Hair Studio Website</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+    <!-- Begin Banner -->
+    <div id="banner">
+        <img class="banner_logo" src="./images/logo.png" alt="">
+        <div class="banner_text">
+            <h1>Hair Studio</h1>
+            <p>Style Your Hair Is Style Your Life</p>
+            <div class="banner_btn">
+                <a href=""><span></span>Find Out</a>
+                <a href=""><span></span>Read More</a>
+            </div>
+        </div>
+    </div>
+    <!-- End Banner -->
+
+    <!-- Side NavBar -->
+    <div id="menuBtn">
+        <img src="./images/menu.png" id="menu" alt="">
+    </div>
+    <section id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Testimonial</a></li>
+                <li><a href="#">Meet Us</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        var menu = document.getElementById("menu");
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function() {
+            if(sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                menu.src = "images/close.png";
+            } else {
+                sideNav.style.right = "-250px";
+                menu.src = "images/menu.png";
+            }
+        }
+    </script>
+    <!-- Side NavBar -->
+
+    <!-- Begin Features -->
+    <div id="feature">
+        <div class="title_text">
+            <p>FEATURES</p>
+            <h1>Why Choose Us</h1>
+        </div>
+        <div class="feature_box">
+            <div class="feature_info">
+                <div class="feature_section">
+                    <h3>Experienced Staff</h3>
+                    <div class="feature_desc">
+                        <div class="feature_icon">
+                            <i class="bi bi-shield-shaded"></i>
+                        </div>
+                        <div class="feature_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent erat mi, dignissim vel malesuada quis, lacinia vel diam.</div>
+                    </div>
+                </div>
+                <div class="feature_section">
+                    <h3>Pre Booking Online
+                    </h3>
+                    <div class="feature_desc">
+                        <div class="feature_icon">
+                            <i class="bi bi-check2-square"></i>
+                        </div>
+                        <div class="feature_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent erat mi, dignissim vel malesuada quis, lacinia vel diam.</div>
+                    </div>
+                </div>
+                <div class="feature_section">
+                    <h3>Affordable Cost</h3>
+                    <div class="feature_desc">
+                        <div class="feature_icon">
+                            <i class="bi bi-currency-euro"></i>                        
+                        </div>
+                        <div class="feature_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent erat mi, dignissim vel malesuada quis, lacinia vel diam.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="feature_img">
+                <img src="./images/barber-man.jpg" alt="">
+            </div>
+        </div>
+    </div> 
+    <!-- End Features -->
+
+    <!-- Begin Services -->
+    <div id="service">
+        <div class="title_text">
+            <p>SERVICES</p>
+            <h1>We Provider Better</h1>
+        </div>
+
+        <div class="service_box">
+            <div class="service_item">
+                <img src="./images/pic-1.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="service_desc">
+                    <h3>Beard Trim</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis dignissim lacus, non vestibulum velit facilisis in.</p>
+                </div>
+            </div>
+            <div class="service_item">
+                <img src="./images/pic-2.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="service_desc">
+                    <h3>Beard Trim</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis dignissim lacus, non vestibulum velit facilisis in.</p>
+                </div>
+            </div>
+            <div class="service_item">
+                <img src="./images/pic-3.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="service_desc">
+                    <h3>Beard Trim</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis dignissim lacus, non vestibulum velit facilisis in.</p>
+                </div>
+            </div>
+            <div class="service_item">
+                <img src="./images/pic-4.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="service_desc">
+                    <h3>Beard Trim</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis dignissim lacus, non vestibulum velit facilisis in.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Service -->
+
+    <!-- Begin Testimonial -->
+    <div id="testimonial">
+        <div class="title_text">
+            <p>TESTIMONIAL</p>
+            <h1>What Client Says</h1>
+        </div>
+        <div class="testimonial_box">
+            <div class="testimonial_item">
+                <div class="testimonial_user">
+                    <img src="./images/img-1.jpg" alt="">
+                    <div class="user_info">
+                        <h4>KEN NORMAN<i class="fa-brands fa-twitter"></i></h4>
+                        <p>@kennorman</p>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis dignissim lacus, non vestibulum velit facilisis in.</p>
+            </div>
+            <div class="testimonial_item">
+                <div class="testimonial_user">
+                    <img src="./images/img-2.jpg" alt="">
+                    <div class="user_info">
+                        <h4>KARIAN NICK<i class="fa-brands fa-twitter"></i></h4>
+                        <p>@kariannick</p>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis dignissim lacus, non vestibulum velit facilisis in.</p>
+            </div>
+            <div class="testimonial_item">
+                <div class="testimonial_user">
+                    <img src="./images/img-3.jpg" alt="">
+                    <div class="user_info">
+                        <h4>DIARA JAMES<i class="fa-brands fa-twitter"></i></h4>
+                        <p>@diarajames</p>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis dignissim lacus, non vestibulum velit facilisis in.</p>
+            </div>
+        </div>
+    </div>
+    <!-- End Testimonial -->
+
+    <!-- Begin Footer -->
     <footer>
         <img class="footer_img" src="./images/footer-img.png" alt="">
         
-        <div class="footer_text">
-            <p>Contact</p>
+        <div class="title_text">
+            <p>CONTACT</p>
             <h1>Visit Shop Today</h1>
         </div>
         
@@ -41,5 +229,6 @@
         </div>
         
     </footer>
+    <!-- End Foooter -->
 </body>
 </html>
