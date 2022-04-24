@@ -99,9 +99,10 @@ header .container p {
 }
 
 .section1 .container .panel {
+    background: #fff;
     box-shadow: 0 25px 42px rgba(65, 58, 58, 0.5);
     position: absolute;
-    top: 108px;
+    top: 96px;
     left: -125px;
     padding: 100px 70px 200px;
     z-index: 1;
@@ -223,7 +224,6 @@ header .container p {
 .section3 {
     margin-top: 150px;
     background: linear-gradient(to bottom, #dd2476, #ff512f);
-
 }
 
 .section3 .row h1 {
@@ -239,6 +239,13 @@ header .container p {
     padding-bottom: 100px;
 }
 
+.section3 .desktop {
+    display: inline-block;
+    background: #fff;
+    border-radius: 90px;
+    padding: 4px 42px;
+    margin: 0 16px;
+}
 
 /* Section4 CSS */
 
